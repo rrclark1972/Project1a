@@ -19,3 +19,13 @@ RUN export JAVA_HOME
 # Making directory adding the HelloWorld java file
 RUN mkdir /applications
 
+# Got to get the HelloJava file and put it in root directory
+RUN wget https://raw.githubusercontent.com/rrclark1972/Project1a/master/HelloJava.java
+
+# Move HelloJava to applcations
+RUN mv HelloJava.java /applications/
+
+# Compile to create .class
+RUN javac /applications/HelloJava.java
+
+
