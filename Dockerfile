@@ -1,5 +1,6 @@
 From ubuntu:latest
 
+
 # Install OpenJDK-8
 RUN apt-get update && \
     apt-get install -y openjdk-8-jdk && \
