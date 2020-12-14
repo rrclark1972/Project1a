@@ -3,7 +3,8 @@ From ubuntu:latest
 
 # Install OpenJDK-8
 RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk && \
+    apt-get install -y openjdk-8-jdk && \ 
+    apt-get install -y wget && \ 
     apt-get clean;
 
 # Fix certificate issues
